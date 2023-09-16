@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from './components/Navbar/Navbar'
 import Courses from './components/Courses/Courses'
+import Cart from './components/Cart/Cart'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,7 +12,10 @@ function App() {
   return (
     <>
       <Navbar></Navbar>
-      <Courses></Courses>
+      <div className='flex gap-3'>
+        <Courses></Courses>
+        <Cart></Cart>
+      </div>
     </>
   )
 }

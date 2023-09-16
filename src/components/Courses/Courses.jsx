@@ -20,7 +20,7 @@ const Courses = () => {
     }, []);
 
     return (
-        <div className="grid grid-cols-3 gap-3">
+        <div className="grid grid-cols-3 gap-3 w-[90%]">
             {courses.map((course) => (
                 <div key={course.course_id} className="card w-96 bg-base-100 shadow-xl">
                     <figure className="px-10 pt-10">
@@ -35,6 +35,7 @@ const Courses = () => {
                             <BsBook></BsBook>
                             <span>Credit: {course.course_credit}hr</span>
                         </div>
+                        <button className="btn btn-primary w-[90%]">Select</button>
                     </div>
                 </div>
             ))}
